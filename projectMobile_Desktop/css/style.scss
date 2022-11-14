@@ -1,3 +1,6 @@
+@media only screen and (max-width :1200px) {
+    
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 //Variable
 $colorYellow: #ffBA60;
@@ -22,6 +25,19 @@ $colorWhite: #ffffff;
     border: $b;
     margin: $m;
     
+}
+
+@mixin btnColorBack($backG, $colorL){
+    background-color: $backG;
+    color: $colorL;
+}
+
+@mixin btnAll{
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    @include contentCenter();
+    @include contentBorder(15px,1px solid $colorBlack ,15px );
 }
 
 /* Resetting the default styling of the browser. */
@@ -83,3 +99,113 @@ header {
     }
 }
 
+main .section__main1 { 
+        display: flex;
+        flex-direction: column;
+    h4 {
+        text-align: center;
+        font-size: 16px;
+        color: #858585;
+    }
+    h1{
+        text-align: center;
+        font-weight: 900px;
+        font-size: 56px;
+
+    }
+    .btn__all {
+        display: flex;
+        justify-content: center;
+        .btn__1 {
+            @include btnAll();
+            @include btnColorBack($colorBlack,$colorWhite);
+            @include contentSize(130px, 32px);
+
+        }
+        .btn__2 {
+            @include btnAll();
+            @include btnColorBack($colorWhite,$colorBlack);
+            @include contentSize(130px, 32px);
+        }
+    }
+
+        .network__Social {
+            display: flex;
+            justify-content: center;
+        .image__pianoBlack {
+            @include contentSize(600px, 600px);
+        }
+    }
+
+}
+
+            h1 {
+            text-align: center;
+            }
+        main .section__main2 { 
+            display:flex;
+            justify-content: space-around;    
+        
+            .side__img  {
+                @include contentSize(500px, 400px);
+                margin: 100px;
+                h3{
+                    font-size: 24px;
+                    margin: 10px;
+                }
+                #assessment {
+                    font-size: 12px;
+                    margin: 10px;
+
+                }
+                #description {
+                    flex-wrap: wrap;
+                    font-size: 24px;
+                    margin: 10px 25px 10px 10px;
+                }
+
+                ul {
+                    display: flex;
+                   li {
+                    list-style:circle;
+                    margin: 10px 20px 10px 20px;
+                   }
+                }
+                
+
+            .btn__3{
+                @include btnAll();
+                @include btnColorBack($colorBlack,$colorWhite);
+                @include contentSize(230px, 32px);
+            }
+
+            }
+           
+        }
+        .image__pianoBrown img {
+            background-image: none;
+            @include contentSize(650px, 600px )
+        }
+
+        main .section__main3 {
+            display:flex;
+            flex-direction: column;  
+            .pianos__3{
+                ul{
+                    @include contentCenter();
+                    justify-content: space-around;
+                }
+            }
+            .btn__foot {
+                @include contentCenter();
+                .btn__4 {
+                    @include btnAll();
+                    @include btnColorBack($colorBlack, $colorWhite);
+                    @include contentSize(130px, 32px);
+            }
+        
+        }
+
+        }
+    
+    }

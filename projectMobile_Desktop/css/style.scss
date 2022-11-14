@@ -156,7 +156,7 @@ main .section__main1 {
         main .section__main2 { 
             display:flex;
             justify-content: space-around;    
-        
+            background-image: url(../image/backgound.png);
             .side__img  {
                 @include contentSize(500px, 400px);
                 margin: 100px;
@@ -173,6 +173,7 @@ main .section__main1 {
                     flex-wrap: wrap;
                     font-size: 24px;
                     margin: 10px 25px 10px 10px;
+                    color: $colorWhite;
                 }
 
                 ul {

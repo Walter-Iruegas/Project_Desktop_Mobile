@@ -129,6 +129,7 @@
   main .section__main2 {
     display: flex;
     justify-content: space-around;
+    background-image: url(../image/backgound.png);
   }
   main .section__main2 .side__img {
     width: 500px;
@@ -147,6 +148,7 @@
     flex-wrap: wrap;
     font-size: 24px;
     margin: 10px 25px 10px 10px;
+    color: #ffffff;
   }
   main .section__main2 .side__img ul {
     display: flex;

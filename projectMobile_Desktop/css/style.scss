@@ -33,6 +33,7 @@ $colorWhite: #ffffff;
 }
 
 @mixin btnAll{
+    cursor:pointer;
     font-size: 14px;
     border-radius: 10px;
     align-items: center;
@@ -135,13 +136,23 @@ main .section__main1 {
         .image__pianoBlack {
             @include contentSize(600px, 600px);
         }
+
+        ul {
+            position: relative;
+            top: 450px;
+            left: 265px;
+            li{
+            margin: 20px 10px 20px 0;
+            } 
+        }
     }
 
 }
-
             h1 {
             text-align: center;
+            margin: 100px;
             }
+
         main .section__main2 { 
             display:flex;
             justify-content: space-around;    
@@ -183,19 +194,73 @@ main .section__main1 {
            
         }
         .image__pianoBrown img {
-            background-image: none;
             @include contentSize(650px, 600px )
         }
 
         main .section__main3 {
-            display:flex;
+            display: flex;
             flex-direction: column;  
-            .pianos__3{
-                ul{
+            @include contentBorder(20px,0 ,200px );
+            .pianos__3 {
+                ul {
                     @include contentCenter();
                     justify-content: space-around;
                 }
             }
+
+           
+            .box {
+                
+                @include contentBorder(20px ,0, 20px);
+                @include contentSize(100x, 250px);
+                border-radius: 8px;
+                font-size: 12px;
+                box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+
+                .image__piano {
+                    @include contentBorder(10px ,0, 10px);
+                    position:relative;
+                    top: -145px;
+
+                   
+                }
+
+                .content{
+                    display: flex;
+                    position: relative;
+                    top: -115px;
+                    right: 10px;
+                    flex-direction: column;
+                    h2 {
+                        margin: 15px;
+                    }
+                    .precio{
+                        display: flex;
+                        flex-direction: row;
+                        @include contentCenter();
+                    }
+                }
+                ul li {
+                    list-style:circle;
+                }
+                div .precio p {
+                    @include contentBorder(10px,1px solid $colorBlack, 25px);
+                    @include contentSize(115px, 10px);
+                    @include contentCenter();
+                    border-radius: 8px;  
+
+                }
+
+                div .precio a {
+                    background: #000000;
+                    padding: 10px;
+                    border-radius: 8px;
+
+                }
+       
+            }
+            
+
             .btn__foot {
                 @include contentCenter();
                 .btn__4 {
@@ -206,6 +271,7 @@ main .section__main1 {
         
         }
 
-        }
-    
     }
+    
+        
+}

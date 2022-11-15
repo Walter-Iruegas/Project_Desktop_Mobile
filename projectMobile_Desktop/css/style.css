@@ -267,3 +267,283 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 600px) {
+  @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+  /* Resetting the default styling of the browser. */
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-text-decoration: 0;
+            text-decoration: 0;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  body {
+    width: 100%;
+  }
+  header .image1 {
+    padding: 25px;
+    border: 0;
+    margin: 25px;
+    align-items: flex-start;
+  }
+  header nav {
+    display: flex;
+  }
+  header nav .image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  header nav ul li:hover {
+    background-color: #000000;
+  }
+  header nav ul li:hover a {
+    color: #ffffff;
+  }
+  header nav ul li {
+    padding: 10px;
+    border: 0;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  header nav ul li a {
+    color: #000000;
+  }
+  header nav ul li a:hover {
+    color: #ffffff;
+  }
+  main .section__main1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section__main1 h4 {
+    text-align: center;
+    font-size: 16px;
+    color: #858585;
+  }
+  main .section__main1 h1 {
+    text-align: center;
+    font-weight: 900px;
+    font-size: 56px;
+  }
+  main .section__main1 .btn__all {
+    display: flex;
+    justify-content: center;
+  }
+  main .section__main1 .btn__all .btn__1 {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 130px;
+    height: 32px;
+  }
+  main .section__main1 .btn__all .btn__2 {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    width: 130px;
+    height: 32px;
+  }
+  main .section__main1 .network__Social {
+    display: flex;
+    justify-content: center;
+  }
+  main .section__main1 .network__Social .image__pianoBlack {
+    width: 600px;
+    height: 600px;
+  }
+  main .section__main1 .network__Social ul {
+    position: relative;
+    top: 450px;
+    left: 265px;
+  }
+  main .section__main1 .network__Social ul li {
+    margin: 20px 10px 20px 0;
+  }
+  h1 {
+    text-align: center;
+    margin: 100px;
+  }
+  main .section__main2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(../images/background.png);
+  }
+  main .section__main2 .side__img {
+    width: 500px;
+    height: 400px;
+    margin: 100px;
+  }
+  main .section__main2 .side__img h3 {
+    font-size: 24px;
+    margin: 10px;
+  }
+  main .section__main2 .side__img #assessment {
+    font-size: 12px;
+    margin: 10px;
+  }
+  main .section__main2 .side__img #description {
+    flex-wrap: wrap;
+    font-size: 24px;
+    margin: 10px 25px 10px 10px;
+    color: #ffffff;
+    width: 300px;
+    height: 200px;
+  }
+  main .section__main2 .side__img ul {
+    display: flex;
+  }
+  main .section__main2 .side__img ul li {
+    list-style: circle;
+    margin: 10px 20px 10px 20px;
+  }
+  main .section__main2 .side__img .btn__3 {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 230px;
+    height: 32px;
+  }
+  .image__pianoBrown img {
+    width: 650px;
+    height: 600px;
+  }
+  main .section__main3 {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 0;
+    margin: 200px;
+  }
+  main .section__main3 .pianos__3 ul {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .section__main3 .box {
+    padding: 20px;
+    border: 0;
+    margin: 20px;
+    width: 100x;
+    height: 250px;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  }
+  main .section__main3 .box .image__piano {
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    position: relative;
+    top: -145px;
+  }
+  main .section__main3 .box .content {
+    display: flex;
+    position: relative;
+    top: -115px;
+    right: 10px;
+    flex-direction: column;
+  }
+  main .section__main3 .box .content h2 {
+    margin: 15px;
+  }
+  main .section__main3 .box .content .precio {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section__main3 .box ul li {
+    list-style: circle;
+  }
+  main .section__main3 .box div .precio p {
+    padding: 10px;
+    border: 1px solid #000000;
+    margin: 25px;
+    width: 115px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  main .section__main3 .box div .precio a {
+    background: #000000;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  main .section__main3 .btn__foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section__main3 .btn__foot .btn__4 {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 130px;
+    height: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
+

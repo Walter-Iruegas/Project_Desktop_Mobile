@@ -172,7 +172,6 @@
                     #assessment {
                         font-size: 12px;
                         margin: 10px;
-    
                     }
                     
                     #description {
@@ -205,24 +204,21 @@
                 @include contentSize(650px, 600px )
             }
     
-            main .section__main3 {
-                display: flex;  
+            main .section__main3 .list__Piano{
+                display: flex;
+                flex-direction: column;  
                 width: 100%;
                 @include contentCenter();
-                @include contentBorder(20px,0 ,200px );
-                .pianos__3 {
-                    ul {
-                        flex-direction: column;
-                        @include contentCenter();
-                        justify-content: space-around;
-                    }
+                @include contentBorder(20px,0 ,20px );
+                
+                .list__tipo{
+                    display: flex;
+                    justify-content: center;
                 }
-    
-               
-                .box {
-                    
+
+                .box {   
                     @include contentBorder(20px ,0, 20px);
-                    @include contentSize(100x, 250px);
+                    @include contentSize(80%, 10px);
                     border-radius: 8px;
                     font-size: 12px;
                     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
@@ -230,15 +226,13 @@
                     .image__piano {
                         @include contentBorder(10px ,0, 10px);
                         position:relative;
-                        top: -145px;
-    
-                       
+                        top: -35px;    
                     }
     
                     .content{
                         display: flex;
                         position: relative;
-                        top: -115px;
+                        top: -85px;
                         right: 10px;
                         flex-direction: column;
                         h2 {
@@ -260,17 +254,11 @@
                         border-radius: 8px;  
     
                     }
-    
                     div .precio a {
-                        background: #000000;
                         padding: 10px;
                         border-radius: 8px;
-    
                     }
-           
                 }
-                
-    
                 .btn__foot {
                     @include contentCenter();
                     .btn__4 {
@@ -282,8 +270,5 @@
             }
     
         }
-        
-            
+
     }
-
-

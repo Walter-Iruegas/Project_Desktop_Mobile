@@ -185,61 +185,59 @@
     width: 650px;
     height: 600px;
   }
-  main .section__main3 {
+  main .section__main3 .list__Piano {
     display: flex;
+    flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border: 0;
-    margin: 200px;
+    margin: 20px;
   }
-  main .section__main3 .pianos__3 ul {
-    flex-direction: column;
+  main .section__main3 .list__Piano .list__tipo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: space-around;
   }
-  main .section__main3 .box {
+  main .section__main3 .list__Piano .box {
     padding: 20px;
     border: 0;
     margin: 20px;
-    width: 100x;
-    height: 250px;
+    width: 80%;
+    height: 10px;
     border-radius: 8px;
     font-size: 12px;
     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
   }
-  main .section__main3 .box .image__piano {
+  main .section__main3 .list__Piano .box .image__piano {
     padding: 10px;
     border: 0;
     margin: 10px;
     position: relative;
-    top: -145px;
+    top: -35px;
   }
-  main .section__main3 .box .content {
+  main .section__main3 .list__Piano .box .content {
     display: flex;
     position: relative;
-    top: -115px;
+    top: -85px;
     right: 10px;
     flex-direction: column;
   }
-  main .section__main3 .box .content h2 {
+  main .section__main3 .list__Piano .box .content h2 {
     margin: 15px;
   }
-  main .section__main3 .box .content .precio {
+  main .section__main3 .list__Piano .box .content .precio {
     display: flex;
     flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main .section__main3 .box ul li {
+  main .section__main3 .list__Piano .box ul li {
     list-style: circle;
   }
-  main .section__main3 .box div .precio p {
+  main .section__main3 .list__Piano .box div .precio p {
     padding: 10px;
     border: 1px solid #000000;
     margin: 25px;
@@ -250,17 +248,16 @@
     align-items: center;
     border-radius: 8px;
   }
-  main .section__main3 .box div .precio a {
-    background: #000000;
+  main .section__main3 .list__Piano .box div .precio a {
     padding: 10px;
     border-radius: 8px;
   }
-  main .section__main3 .btn__foot {
+  main .section__main3 .list__Piano .btn__foot {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main .section__main3 .btn__foot .btn__4 {
+  main .section__main3 .list__Piano .btn__foot .btn__4 {
     cursor: pointer;
     font-size: 14px;
     border-radius: 10px;

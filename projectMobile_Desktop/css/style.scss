@@ -1,0 +1,289 @@
+@media only screen and (max-width :600px) {
+    
+
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+    //Variable
+    $colorYellow: #ffBA60;
+    $colorBlack: #000000;
+    $colorWhite: #ffffff;
+    
+    
+    //Function(mixin)
+    @mixin contentCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @mixin contentSize ($w,$h){
+        width: $w;
+        height: $h;
+    }
+    
+    @mixin contentBorder ($p, $b, $m){
+        padding: $p;
+        border: $b;
+        margin: $m;
+        
+    }
+    
+    @mixin btnColorBack($backG, $colorL){
+        background-color: $backG;
+        color: $colorL;
+    }
+    
+    @mixin btnAll{
+        cursor:pointer;
+        font-size: 14px;
+        border-radius: 10px;
+        align-items: center;
+        @include contentCenter();
+        @include contentBorder(15px,1px solid $colorBlack ,15px );
+    }
+    
+    /* Resetting the default styling of the browser. */
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: 0;
+        list-style: none;
+        border: 0;
+        outline: 0;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    
+    header {
+        @include contentSize(100%, 150px);
+        display: flex;
+        justify-content: space-between;    
+    
+    }
+    body {
+        width: 100%;
+    }
+    header {
+        .image1 {
+            @include contentBorder(25px, 0, 25px);
+            align-items: flex-start;
+        }
+    
+        nav {
+            display: flex;
+        }
+    
+        nav  .image2 {
+            @include contentCenter();
+        }
+    
+        nav ul {
+            @include contentCenter();
+            font-size: 18px;
+            text-align: center;
+            border-radius: 10px;
+            li:hover{
+                background-color: #000000;
+           
+                a {
+                    color: $colorWhite;
+                }
+            }
+    
+            li {
+                @include contentBorder(10px ,0 ,5px);
+                border-radius: 10px;
+    
+                a {
+                    color: #000000;
+                }
+                a:hover{
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+    
+    main .section__main1 { 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        h4 {
+            text-align: center;
+            font-size: 16px;
+            color: #858585;
+        }
+        h1{
+            text-align: center;
+            font-weight: 900px;
+            font-size: 56px;
+    
+        }
+        .btn__all {
+            display: flex;
+            justify-content: center;
+            .btn__1 {
+                @include btnAll();
+                @include btnColorBack($colorBlack,$colorWhite);
+                @include contentSize(130px, 32px);
+    
+            }
+            .btn__2 {
+                @include btnAll();
+                @include btnColorBack($colorWhite,$colorBlack);
+                @include contentSize(130px, 32px);
+            }
+        }
+    
+            .network__Social {
+                display: flex;
+                justify-content: center;
+            .image__pianoBlack {
+                @include contentSize(600px, 600px);
+            }
+    
+            ul {
+                position: relative;
+                top: 450px;
+                left: 265px;
+                li{
+                margin: 20px 10px 20px 0;
+                } 
+            }
+        }
+    
+    }
+                h1 {
+                text-align: center;
+                margin: 100px;
+                }
+    
+                
+            main .section__main2 { 
+                width: 100%;
+                display:flex;
+                flex-direction: column-reverse;   
+                background-image: url(../images/background.png);
+                .side__img  {
+                    @include contentSize(500px, 400px);
+                    margin: 100px;
+                    h3{
+                        font-size: 24px;
+                        margin: 10px;
+                    }
+                    #assessment {
+                        font-size: 12px;
+                        margin: 10px;
+    
+                    }
+                    
+                    #description {
+                        flex-wrap: wrap;
+                        font-size: 24px;
+                        margin: 10px 25px 10px 10px;
+                        color: $colorWhite;
+                        @include contentSize(300px,200px )
+                    }
+    
+                    ul {
+                        display: flex;
+                       li {
+                        list-style:circle;
+                        margin: 10px 20px 10px 20px;
+                       }
+                    }
+                    
+    
+                .btn__3{
+                    @include btnAll();
+                    @include btnColorBack($colorBlack,$colorWhite);
+                    @include contentSize(230px, 32px);
+                }
+    
+                }
+               
+            }
+            .image__pianoBrown img {
+                @include contentSize(650px, 600px )
+            }
+    
+            main .section__main3 {
+                display: flex;  
+                width: 100%;
+                @include contentCenter();
+                @include contentBorder(20px,0 ,200px );
+                .pianos__3 {
+                    ul {
+                        flex-direction: column;
+                        @include contentCenter();
+                        justify-content: space-around;
+                    }
+                }
+    
+               
+                .box {
+                    
+                    @include contentBorder(20px ,0, 20px);
+                    @include contentSize(100x, 250px);
+                    border-radius: 8px;
+                    font-size: 12px;
+                    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+    
+                    .image__piano {
+                        @include contentBorder(10px ,0, 10px);
+                        position:relative;
+                        top: -145px;
+    
+                       
+                    }
+    
+                    .content{
+                        display: flex;
+                        position: relative;
+                        top: -115px;
+                        right: 10px;
+                        flex-direction: column;
+                        h2 {
+                            margin: 15px;
+                        }
+                        .precio{
+                            display: flex;
+                            flex-direction: row;
+                            @include contentCenter();
+                        }
+                    }
+                    ul li {
+                        list-style:circle;
+                    }
+                    div .precio p {
+                        @include contentBorder(10px,1px solid $colorBlack, 25px);
+                        @include contentSize(115px, 10px);
+                        @include contentCenter();
+                        border-radius: 8px;  
+    
+                    }
+    
+                    div .precio a {
+                        background: #000000;
+                        padding: 10px;
+                        border-radius: 8px;
+    
+                    }
+           
+                }
+                
+    
+                .btn__foot {
+                    @include contentCenter();
+                    .btn__4 {
+                        @include btnAll();
+                        @include btnColorBack($colorBlack, $colorWhite);
+                        @include contentSize(130px, 32px);
+                }
+            
+            }
+    
+        }
+        
+            
+    }
+
+
